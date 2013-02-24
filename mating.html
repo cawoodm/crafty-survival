@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>	
+	<style type="text/css">
+	html {overflow:hidden;}
+	</style>
+</head>
+<body style="margin :0px;">
+  <button onclick="Crafty.audio.toggleMute();">Silence!</button>
+  <button onclick="window.setTimeout(function(){Crafty.pause()}, 10);">Pause</button>
+  <button onclick="Crafty.stop()">Stop</button>
+  <button onclick="Crafty.init()">Play</button>
+  <button onclick="window.test=true">Test</button>
+  <button onclick="Crafty.timer.step()">Step</button>
+	<script type="text/javascript" src="crafty.js"></script>
+	<script type="text/javascript" src="components.js"></script>
+	<script type="text/javascript" src="mating.js"></script>
+</body>
+</html>

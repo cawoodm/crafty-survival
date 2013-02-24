@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Random Color Generator</title>
+<meta http-equiv="refresh" content="2" />
+<style>
+* {
+	margin: 0;
+}
+#tag {
+	width: 200px;
+	height: 100;
+	margin-top: 30px;
+	float: left;
+	color: #666;
+	background: #ddd;
+	border: 1px solid #aaa;
+}
+#tag h2,h3 {
+	margin: 10px auto 10px 30px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#back
+{
+	float: left;
+	margin: 300px auto 0 -200px;
+	padding: 10px;
+	text-align: center;
+	width: 300px;
+	height: 40px;
+	background: #ddd;
+	border: 1px solid #aaa;
+}
+#back a
+{
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+}
+#back a:hover
+{
+	text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+<script>
+	var hexno=new String;
+	arr=new Array("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f");
+	
+	var n1=Math.round(Math.random()*15);
+	var n2=Math.round(Math.random()*15);
+	var n3=Math.round(Math.random()*15);
+	var n4=Math.round(Math.random()*15);
+	var n5=Math.round(Math.random()*15);
+	var n6=Math.round(Math.random()*15);
+	hexno="#"+arr[n1]+""+arr[n2]+""+arr[n3]+""+arr[n4]+""+arr[n5]+""+arr[n6];
+	document.write("<div id='tag'>");
+	document.write("<h2>Hex Color</h2>"+"<h3>"+hexno+"</h3>");
+	document.write("</div>");
+	window.document.bgColor=hexno;
+</script>
+
+<div id="back">
+Created by: Nikhil Misal<br />
+<a href="http://nikhilmisal.com/create-simple-random-color-generator-using-javascript" title="Go back to tutorial">Back to the Tutorial</a>
+</div>
+
+</body>
+</html>

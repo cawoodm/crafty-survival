@@ -1,0 +1,17 @@
+{
+  "jshint": {
+    "global": ["window", "console", "Crafty", "debug"]
+  },
+  "exec": {
+    "afterSave": {
+      "**/components/*.js": "copy /y /b components\\*.js components.js"
+    },
+    "onKeys": {
+      "ctrl+alt+l": {
+        "cmd": "cls",
+        "cwd": "${dir}",
+        "name": "ls current dir"
+      }
+    },
+  }
+}
