@@ -1,9 +1,9 @@
-crafty-survival
-===============
+#Survival Simulations
+====================
 
-Survival simulation "games" - blobs and mating for now.
+Survival simulation "games" using CraftyJS for Component/Entity System and HTML5 for rendering.
 
-#Survival
+## survival.html
 
 This is the beginnings of a playground to test some survival scenarios. Right now it's just some random blobs with random movement, random rotation. The green static stuff (Plants) is supposed to be vegetation.
 
@@ -11,8 +11,15 @@ This is the beginnings of a playground to test some survival scenarios. Right no
 <img src="survival.png"/>
 </center>
 
-This one is more interesting.
 
+## mating.html
+
+This one is more interesting.
+<center>
+<img src="mating.png"/>
+</center>
+
+### Rules and Visualisation
 * Red = Female / Blue = Male (obviously)
 * Each blob can move randomly about
 * Blobs age and die at age 101
@@ -24,13 +31,7 @@ This one is more interesting.
 * Females get 10% less fertile after each pregnancy
 * Offspring are small and grow until age 20
 
-#Mating
-
-<center>
-<img src="mating.png"/>
-</center>
-
-# Components
+### Components
 * Being: A being has an age, a sex (50/50 Male/Female)
 * Blob: A (scalable!) sprite which should look like an amoeba or something
 * Bounce: Harder than it looks: bounce back when you collide
