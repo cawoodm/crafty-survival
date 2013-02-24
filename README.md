@@ -3,7 +3,9 @@ crafty-survival
 
 Survival simulation "games" - blobs and mating for now.
 
-Just some random blobs with random movement, random rotation:
+#Survival
+
+This is the beginnings of a playground to test some survival scenarios. Right now it's just some random blobs with random movement, random rotation. The green static stuff (Plants) is supposed to be vegetation.
 
 <center>
 <img src="survival.png"/>
@@ -21,6 +23,8 @@ This one is more interesting.
 * The more transparent the less fertile
 * Females get 10% less fertile after each pregnancy
 * Offspring are small and grow until age 20
+
+#Mating
 
 <center>
 <img src="mating.png"/>
